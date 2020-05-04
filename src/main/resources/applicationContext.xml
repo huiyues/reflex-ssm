@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启spring的注解功能,配置扫描包的时候,spring会自动开启注解功能,故此项可不配置-->
+    <!--<context:annotation-config/>-->
+    <!-- 配置bean组件扫描 此时会自动扫描base-package包以及子包下面含有@Component注解的bean,纳入spring容器管理-->
+    <context:component-scan base-package="com.heiye.reflex"/>
+</beans>

@@ -1,0 +1,30 @@
+{
+  "properties": [
+    {
+      "code": 1,
+      "nextCode": [
+        {
+          "code": 101,
+          "methodName": "login"
+        },
+        {
+          "code": 102,
+          "methodName": "logout"
+        },
+        {
+          "code": 103,
+          "methodName": "check"
+        }
+      ]
+    },
+    {
+      "code": 2,
+      "nextCode": [
+        {
+          "code": 201,
+          "methodName": "saveLog"
+        }
+      ]
+    }
+  ]
+}

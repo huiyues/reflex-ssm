@@ -57,6 +57,11 @@ public class ReflexService {
         Class<? extends ReflexService> aClass = reflexService.getClass();
         for (Method method : aClass.getMethods()) {
             if (name != null && name.equals(method.getName())) {
+                // 测试功能，开发中去掉即可
+                if (method.getParameters().length > 0) {
+                    name = "(该方法需要参数，未开发！)";
+                    return name;
+                }
                 try {
                     // 可传入参数
                     method.invoke(reflexService);
